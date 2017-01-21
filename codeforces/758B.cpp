@@ -2,7 +2,6 @@
 #include <cstdio>
 #include <string>
 #include <cstring>
-#include <algorithm>
 int main()
 {
     std::string s;
@@ -76,5 +75,6 @@ int main()
       counter++;
       if (counter == 4) counter = 0;
     }
+    delete[] ch;
     printf("%d %d %d %d\n", toChange[0], toChange[1], toChange[2], toChange[3]);
   }
